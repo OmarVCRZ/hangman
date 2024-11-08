@@ -139,8 +139,8 @@ fun startHangman(listOfWords: Map<String, String>) {
             if (guess in errorGuess || wordShape.contains(guess)) {
                 println("You've Already Guessed this! Try A Different Input")
             }
-            // Gives a hint after the fourth attempt
-            if (errorGuess.size >= 2) {
+            // Gives a hint only if the game has not been won yet and made at least two attempts
+            if (!gameWon && errorGuess.size >= 2) {
                 println("Seems you need help, here's a hint: $hint")
             }
 
