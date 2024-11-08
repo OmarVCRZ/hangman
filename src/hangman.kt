@@ -100,7 +100,7 @@ fun startHangman(listOfWords: Map<String, String>) {
         // Asking the user a choice to either guess the full word or do a single letter
         println()
         println("Would you like to guess the full word or do a single letter at a time?")
-        println("Note: Attempting full world penalizes you by reducing 2 attempts")
+        println("Note: Attempting to guess the entire word will penalize you, if incorrect by reducing 2 attempts")
         println()
         println("Please enter your choice [Enter 'w' or 'l']: ")
 
